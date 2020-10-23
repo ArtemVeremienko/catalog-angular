@@ -4,7 +4,7 @@ export interface User {
   password: string;
 }
 
-export interface Auto {
+export interface Car {
   id: number;
   image: string;
   name: string;

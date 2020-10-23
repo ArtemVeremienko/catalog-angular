@@ -1,6 +1,6 @@
-import { Auto } from './interfaces'
+import { Car } from './interfaces'
 
-export const AUTOS: Auto[] = [
+export const CARS: Car[] = [
   {
     id: 1,
     image: 'img.png',
