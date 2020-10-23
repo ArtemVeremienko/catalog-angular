@@ -9,12 +9,18 @@ import { User } from './interfaces'
 export class AppComponent {
   title = 'Auto Catalog';
 
+  ngOnInit(): void {
+    this.isLogged = !!localStorage.getItem('logged')
+  }
+
   user: User = {
     login: '',
     password: '',
   };
 
+  isLogged: boolean;
+
   onLogin(): void {
-    localStorage.setItem('user', JSON.stringify(this.user))
+    localStorage.setItem('logged', 'true')
   }
 }
