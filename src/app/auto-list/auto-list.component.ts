@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Auto } from '../interfaces';
-import { AUTOS } from '../mock-auto'
+import { Car } from '../interfaces'
+import { CarsService } from '../cars.service'
 
 @Component({
   selector: 'app-auto-list',
@@ -10,14 +10,16 @@ import { AUTOS } from '../mock-auto'
 export class AutoListComponent implements OnInit {
 
 
-  constructor() { }
+  constructor(private carsService: CarsService) { }
 
   ngOnInit(): void {
+    this.getCars()
   }
 
-  autos = AUTOS;
+  cars: Car[];
 
-  onInfo() {
-    // TODO: go to info page
+  getCars(): void {
+    this.carsService.getCars()
+      .subscribe(cars => this.cars = cars);
   }
 }
