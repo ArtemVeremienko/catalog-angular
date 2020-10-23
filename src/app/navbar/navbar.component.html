@@ -1,20 +1,18 @@
 <mat-toolbar>
-  <button mat-flat-button>
+  <a routerLink="/cars" mat-flat-button>
     <mat-icon>menu</mat-icon>
     <span>Каталог</span>
-  </button>
+  </a>
 
-  <button mat-flat-button>
+  <a routerLink="/add" mat-flat-button>
     <mat-icon>add_shopping_cart</mat-icon>
     <span>Добавить</span>
-  </button>
+  </a>
 
 
   <span class="example-spacer"></span>
-  <button mat-flat-button>
+  <button mat-flat-button (click)="logout()">
     <mat-icon>exit_to_app</mat-icon>
     <span>Выйти</span>
   </button>
-
-
 </mat-toolbar>
