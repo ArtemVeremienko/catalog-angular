@@ -22,5 +22,6 @@ export class AppComponent {
 
   onLogin(): void {
     localStorage.setItem('logged', 'true')
+    this.isLogged = true;
   }
 }
