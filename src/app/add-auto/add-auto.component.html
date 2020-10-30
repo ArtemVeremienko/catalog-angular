@@ -1,1 +1,26 @@
-<p>add-auto works!</p>
+<div class="add-auto">
+  <h2>Добавить авто в каталог</h2>
+  <form class="form">
+    <mat-form-field class="full-width">
+      <mat-label>Ссылка на изображение</mat-label>
+      <input type="url" matInput placeholder="http://..." pattern="^https?:\/\/.+">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Название авто</mat-label>
+      <input matInput placeholder="Ford" value="">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Описание</mat-label>
+      <textarea matInput placeholder="Без пробега по стране"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Год выпуска</mat-label>
+      <input matInput placeholder="2020" type="number" value="" max="2020">
+    </mat-form-field>
+
+    <button type="submit" mat-flat-button color="primary">Купить!</button>
+  </form>
+</div>

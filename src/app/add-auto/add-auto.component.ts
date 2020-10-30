@@ -12,4 +12,8 @@ export class AddAutoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  imgUrl: string = '';
+
+
+
 }
